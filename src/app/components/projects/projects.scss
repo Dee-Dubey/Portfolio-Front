@@ -1,0 +1,200 @@
+// .section-title {
+//     font-size: 3rem;
+//     font-weight: 800;
+// }
+
+// .text-muted{
+//     color: var(--text-muted) !important;
+// }
+
+// .text-gradient {
+//     background: linear-gradient(90deg, #60a5fa, #a855f7);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+// }
+
+// .project-card {
+//     background: rgba(17, 24, 39, 0.4);
+//     border: 1px solid rgba(255, 255, 255, 0.05);
+//     border-radius: 20px;
+//     transition: all 0.3s ease;
+//     backdrop-filter: blur(10px);
+
+//     &:hover {
+//         transform: translateY(-8px);
+//         border-color: rgba(59, 130, 246, 0.3);
+//         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+//     }
+// }
+
+// .project-title {
+//     font-size: 1.75rem;
+//     max-width: 70%;
+// }
+
+// // Status Pills
+// .status-pill {
+//     padding: 4px 12px;
+//     border-radius: 20px;
+//     font-size: 12px;
+//     font-weight: 500;
+// }
+
+// .pill-progress {
+//     background: rgba(251, 191, 36, 0.1);
+//     color: #fbbf24;
+//     border: 1px solid rgba(251, 191, 36, 0.3);
+// }
+
+// .pill-completed {
+//     background: rgba(16, 185, 129, 0.1);
+//     color: #10b981;
+//     border: 1px solid rgba(16, 185, 129, 0.3);
+// }
+
+// .project-accent-text {
+//     color: var(--text-muted);
+//     font-size: 14px;
+//     font-style: italic;
+//     border-left: 2px solid rgba(59, 130, 246, 0.5);
+//     padding-left: 12px;
+//     margin-bottom: 20px;
+// }
+
+// // Tech Tags
+// .tech-tags {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 10px;
+// }
+
+// .tech-tag {
+//     background: rgba(59, 130, 246, 0.1);
+//     color: #60a5fa;
+//     padding: 4px 14px;
+//     border-radius: 8px;
+//     font-size: 13px;
+//     border: 1px solid rgba(59, 130, 246, 0.2);
+// }
+
+// // Feature List
+// .feature-list {
+//     list-style: none;
+//     padding: 0;
+    
+//     li {
+//         color: var(--text-muted);
+//         margin-bottom: 10px;
+//         font-size: 15px;
+//         display: flex;
+//         align-items: center;
+
+//         &::before {
+//             content: "●";
+//             color: #3b82f6;
+//             font-size: 10px;
+//             margin-right: 12px;
+//         }
+//     }
+// }
+
+// // Buttons
+// .btn-github {
+//     background: #1f2937;
+//     color: white;
+//     border: 1px solid #374151;
+//     padding: 10px;
+//     border-radius: 10px;
+//     &:hover { background: #374151; color: white; }
+// }
+
+// .btn-demo {
+//     background: #3b82f6;
+//     color: white;
+//     border: none;
+//     padding: 10px;
+//     border-radius: 10px;
+//     font-weight: 500;
+//     &:hover { background: #2563eb; color: white; }
+// }
+
+
+// Gradient for the header
+.text-gradient {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// The Glassmorphic Card
+.project-card {
+    background: rgba(17, 24, 39, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+
+    &:hover {
+        transform: translateY(-8px);
+        border-color: rgba(59, 130, 246, 0.4);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+}
+
+// Status Pills
+.status-pill {
+    padding: 4px 14px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    &.pill-progress {
+        background: rgba(251, 191, 36, 0.1);
+        color: #fbbf24;
+        border: 1px solid rgba(251, 191, 36, 0.2);
+    }
+
+    &.pill-completed {
+        background: rgba(16, 185, 129, 0.1);
+        color: #10b981;
+        border: 1px solid rgba(16, 185, 129, 0.2);
+    }
+}
+
+// Accent Text styling
+.project-accent-text {
+    color: var(--text-muted);
+    font-style: italic;
+    border-left: 3px solid #3b82f6;
+    padding-left: 15px;
+}
+
+// Tech Tag styling
+.tech-tag {
+    background: rgba(59, 130, 246, 0.1);
+    color: #60a5fa;
+    padding: 4px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+// Custom dot for lists
+.feature-dot {
+    color: #3b82f6;
+    font-size: 0.6rem;
+}
+
+// Custom Button Overrides
+.btn-github {
+    background: #1f2937;
+    color: white;
+    border: 1px solid #374151;
+    &:hover { background: #374151; color: white; }
+}
+
+.btn-demo {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    &:hover { background: #2563eb; color: white; opacity: 0.9; }
+}

@@ -1,0 +1,116 @@
+<!-- <section class="section container" id="projects">
+    
+    <div class="text-center mb-5">
+        <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+        <p class="text-muted">Real-world applications built with modern tech</p>
+    </div>
+
+    <div class="row g-4 mt-3">
+        @for (p of projects(); track p.title) {
+        <div class="col-md-6">
+            <div class="project-card h-100 p-4">
+                
+                
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                    <h3 class="project-title">{{p.title}}</h3>
+                    <span class="status-pill" [ngClass]="{
+                        'pill-completed': p.status === 'Completed',
+                        'pill-progress': p.status === 'In Progress'
+                    }">
+                        {{p.status}}
+                    </span>
+                </div>
+
+                
+                <p class="project-accent-text">
+                    {{ p.title === 'Loyalty Program System' ? 'Multi-tier reward management for businesses' : 'Streamlined employee data management' }}
+                </p>
+
+                
+                <div class="tech-tags mb-4">
+                    @for (t of p.tech; track t) {
+                        <span class="tech-tag">{{t}}</span>
+                    }
+                </div>
+
+                
+                <ul class="feature-list mb-5">
+                    @for (f of p.features; track f) {
+                    <li>{{f}}</li>
+                    }
+                </ul>
+
+                
+                <div class="mt-auto d-flex gap-3">
+                    <button class="btn btn-github flex-grow-1">
+                        <i class="bi bi-github me-2"></i> GitHub
+                    </button>
+                    <button class="btn btn-demo flex-grow-1">
+                        <i class="bi bi-box-arrow-up-right me-2"></i> Live Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</section> -->
+
+<section class="section container py-5" id="projects">
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-2">Featured <span class="text-gradient">Projects</span></h2>
+        <p class="text-secondary opacity-75">Real-world applications built with modern tech</p>
+    </div>
+
+    <!-- Project Grid -->
+    <div class="row g-4 mt-3">
+        @for (p of projects(); track p.title) {
+        <div class="col-12 col-md-6">
+            <div class="project-card h-100 p-4 d-flex flex-column">
+                
+                <!-- Title & Status Pill -->
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                    <h3 class="h4 fw-bold mb-0">{{p.title}}</h3>
+                    <span class="status-pill text-nowrap" [ngClass]="{
+                        'pill-completed': p.status === 'Completed',
+                        'pill-progress': p.status === 'In Progress'
+                    }">
+                        {{p.status}}
+                    </span>
+                </div>
+
+                <!-- Sub-description -->
+                <p class="project-accent-text small mb-4">
+                    {{ p.title === 'Loyalty Program System' ? 'Multi-tier reward management for businesses' : 'Streamlined employee data management' }}
+                </p>
+
+                <!-- Tech Tags -->
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    @for (t of p.tech; track t) {
+                        <span class="tech-tag small">{{t}}</span>
+                    }
+                </div>
+
+                <!-- Feature List -->
+                <ul class="feature-list list-unstyled mb-5">
+                    @for (f of p.features; track f) {
+                    <li class="mb-2 d-flex align-items-center small text-secondary">
+                        <span class="feature-dot me-2">●</span> {{f}}
+                    </li>
+                    }
+                </ul>
+
+                <!-- Action Buttons -->
+                <div class="mt-auto d-flex gap-3">
+                    <button class="btn btn-github flex-grow-1 py-2 rounded-3 fw-medium">
+                        <i class="bi bi-github me-2"></i> GitHub
+                    </button>
+                    <button class="btn btn-demo flex-grow-1 py-2 rounded-3 fw-medium">
+                        <i class="bi bi-box-arrow-up-right me-2"></i> Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</section>

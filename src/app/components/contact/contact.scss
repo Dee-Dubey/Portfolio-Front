@@ -1,0 +1,64 @@
+// Gradient Typography
+.text-gradient {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-subtitle {
+  max-width: 600px;
+  color: var(--text-muted);
+}
+
+// Resume Button Styling
+.btn-resume-gradient {
+  background: var(--accent-gradient);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(168, 85, 247, 0.3);
+    color: white;
+    filter: brightness(1.1);
+  }
+}
+
+// Custom Glassmorphic Card
+.contact-card {
+  background: rgba(17, 24, 39, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+
+  &:hover {
+    background: rgba(17, 24, 39, 0.6);
+    border-color: rgba(59, 130, 246, 0.3);
+    transform: translateY(-5px);
+    
+    .value { color: #fff; } // Ensure contrast on hover
+  }
+
+  .label { color: var(--text-muted); letter-spacing: 1px; }
+  .value { color: var(--text-main); }
+}
+
+// The Icon Container
+.icon-box {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+
+  &.blue { color: #3b82f6; }
+  &.purple { color: #a855f7; }
+  &.sky { color: #0ea5e9; }
+}

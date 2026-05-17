@@ -1,0 +1,29 @@
+/* Default = TOP STATE */
+.custom-navbar {
+  background: transparent;
+  border-bottom: none;
+  backdrop-filter: none;
+  transition: all 0.3s ease;
+}
+
+/* SCROLLED STATE */
+.custom-navbar.scrolled {
+  background: rgba(11, 15, 26, 0.7);
+  backdrop-filter: blur(12px);
+//   border-bottom: 1px solid var(--border);
+  box-shadow: 0 0 20px rgba(79, 70, 229, 0.1);
+}
+
+/* TEXT COLOR FIX */
+.navbar-brand{
+    color: oklch(70.7% 0.165 254.624);
+}
+
+.nav-link {
+  color: var(--text-primary) !important;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  color: #8B5CF6 !important;
+}

@@ -1,0 +1,75 @@
+<!-- <section class="section container" id="skills">
+    <div class="text-center mb-5">
+        <h2 class="section-title">Skills & <span class="text-gradient">Technologies</span></h2>
+        <p class="text-muted">Building robust applications with modern tools</p>
+    </div>
+
+    <div class="row g-4">
+        @for (s of skills(); track s.title) {
+        <div class="col-lg-3 col-md-6">
+            <div class="skill-card">
+                
+                <div class="d-flex align-items-center mb-4">
+                    <div class="icon-box me-3" [style.color]="s.color">
+                        <i class="bi {{s.icon}}"></i>
+                    </div>
+                    <h4 class="m-0">{{s.title}}</h4>
+                </div>
+
+                
+                <div class="skill-list">
+                    @for (item of s.items; track item) {
+                    <div class="skill-item">
+                        <span class="item-name">{{item}}</span>
+                        <div class="dots" [style.color]="s.color">
+                            <span>●</span><span>●</span><span>●</span><span>●</span>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</section> -->
+
+
+<section class="section container py-5" id="skills">
+    <!-- Header -->
+    <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-2">Skills & <span class="text-gradient">Technologies</span></h2>
+        <p class="text-secondary opacity-75">Building robust applications with modern tools</p>
+    </div>
+
+    <!-- Skills Grid -->
+    <div class="row g-4">
+        @for (s of skills(); track s.title) {
+        <div class="col-lg-3 col-md-6">
+            <div class="skill-card h-100 p-4">
+                <!-- Card Header -->
+                <div class="d-flex align-items-center mb-4">
+                    <div class="icon-box me-3 flex-shrink-0" [style.color]="s.color">
+                        <i class="bi {{s.icon}}"></i>
+                    </div>
+                    <h4 class="h5 fw-bold m-0 text-white">{{s.title}}</h4>
+                </div>
+
+                <!-- Skill Items -->
+                <div class="skill-list d-flex flex-column gap-3">
+                    @for (item of s.items; track item) {
+                    <div class="skill-item d-flex justify-content-between align-items-center">
+                        <span class="item-name small text-secondary opacity-75">{{item}}</span>
+                        <div class="dots d-flex gap-1" [style.color]="s.color">
+                            <span class="dot">●</span>
+                            <span class="dot">●</span>
+                            <span class="dot">●</span>
+                            <span class="dot opacity-25">●</span>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</section>

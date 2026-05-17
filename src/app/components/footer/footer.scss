@@ -1,0 +1,94 @@
+// .footer {
+//   border-top: 1px solid rgba(255, 255, 255, 0.05);
+//   background: transparent;
+// }
+
+// // Logo Box Styling
+// .logo-box {
+//   width: 45px;
+//   height: 45px;
+//   background: linear-gradient(135deg, #3b82f6, #a855f7);
+//   color: white;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-weight: 800;
+//   border-radius: 12px;
+//   font-size: 1.2rem;
+// }
+
+// // Brand Text
+// .brand-text {
+//   .name {
+//     font-size: 1.1rem;
+//     font-weight: 600;
+//     color: var(--text-main);
+//   }
+  
+//   .title {
+//     font-size: 0.85rem;
+//     color: var(--text-muted);
+//   }
+// }
+
+// // Rights Information
+// .footer-info {
+//   .copyright {
+//     font-size: 0.9rem;
+//     color: var(--text-muted);
+//   }
+
+//   .tech-stack {
+//     font-size: 0.8rem;
+//     color: rgba(156, 163, 175, 0.6); // Slightly more faded than text-muted
+//   }
+// }
+
+// // Responsive adjustments
+// @media (max-width: 768px) {
+//   .footer-content {
+//     flex-direction: column;
+//     gap: 2rem;
+//     text-align: center;
+
+//     .footer-brand {
+//         flex-direction: column;
+//         .logo-box { margin-right: 0 !important; margin-bottom: 10px; }
+//     }
+
+//     .footer-info {
+//       text-align: center;
+//     }
+//   }
+// }
+
+
+
+// Custom Logo Box - Kept for the unique gradient branding
+.logo-box {
+  width: 45px;
+  height: 45px;
+  background: var(--accent-gradient); // Using your style.scss variable
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+
+// Custom border color to match your dark theme perfectly
+.border-white-subtle {
+  border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+// Extra small text for the tech stack
+.x-small {
+  font-size: 0.75rem;
+}
+
+// Background for the footer itself
+.footer {
+  background: transparent;
+}
