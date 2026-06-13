@@ -18,19 +18,19 @@ export class Skills {
       title: 'Backend',
       icon: 'bi-hdd-stack',
       color: '#10b981', // Green
-      items: ['Node.js', 'Express']
+      items: ['Node.js', 'ExpressJs', 'Microservices', 'REST APIs']
     },
     {
       title: 'Database',
       icon: 'bi-database',
       color: '#a855f7', // Purple
-      items: ['MongoDB', 'SQL']
+      items: ['MongoDB', 'SQL', 'Redis']
     },
     {
-      title: 'Tools',
+      title: 'DevOPs / Tools',
       icon: 'bi-wrench-adjustable',
       color: '#0ea5e9', // Sky Blue
-      items: ['Git', 'REST APIs']
+      items: ['Git', 'GitHub', 'Docker', 'CI / CD', 'Postman']
     }
   ]);
 }
